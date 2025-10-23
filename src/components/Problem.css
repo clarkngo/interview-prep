@@ -1,0 +1,76 @@
+.problem-container {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--bg);
+}
+
+.problem-section {
+  margin-top: 20px;
+}
+
+h3 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* Mobile-friendly tweaks */
+.problem-container {
+  padding: 18px;
+}
+
+.problem-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.problem-actions {
+  margin-top: 12px;
+}
+
+.problem-actions .btn {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.btn { background:#0078d4; color:#fff; border:none }
+.btn[disabled] { opacity:0.6 }
+
+.problem-container .btn { font-size:0.9rem }
+
+/* Ensure code blocks scroll horizontally on small screens */
+.problem-container pre {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+/* Copy tooltip */
+.code-toolbar-tooltip {
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  transform: translateY(-6px);
+}
+
+/* small badge for counts */
+.count-badge { background: var(--accent); color: var(--accent-contrast); padding: 2px 8px; border-radius: 999px; font-size:0.8rem }
+
+@media (max-width: 600px) {
+  .problem-container {
+    padding: 14px;
+    border-radius: 10px;
+  }
+  h3 { font-size: 1.05rem; }
+}
