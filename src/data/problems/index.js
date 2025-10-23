@@ -43,6 +43,12 @@ import wordPattern from './word-pattern';
 import implementStrStr from './implement-strstr';
 import searchInRotatedSortedArray from './search-in-rotated-sorted-array';
 import findPeakElement from './find-peak-element';
+import designTwitter from './design-twitter';
+import wordBreak from './word-break';
+import coinChange from './coin-change';
+import longestIncreasingSubsequence from './longest-increasing-subsequence';
+import longestConsecutiveSequence from './longest-consecutive-sequence';
+import subarraySumEqualsK from './subarray-sum-equals-k';
 
 export const problems = [
   twoSum,
@@ -90,6 +96,12 @@ export const problems = [
   implementStrStr,
   searchInRotatedSortedArray,
   findPeakElement,
+  designTwitter,
+  wordBreak,
+  coinChange,
+  longestIncreasingSubsequence,
+  longestConsecutiveSequence,
+  subarraySumEqualsK,
 ];
 
 export const problemsById = problems.reduce((acc, p) => {
